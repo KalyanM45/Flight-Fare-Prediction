@@ -1,0 +1,7 @@
+README.md
+setup.py
+FlightPricePrediction.egg-info/PKG-INFO
+FlightPricePrediction.egg-info/SOURCES.txt
+FlightPricePrediction.egg-info/dependency_links.txt
+FlightPricePrediction.egg-info/requires.txt
+FlightPricePrediction.egg-info/top_level.txt

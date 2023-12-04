@@ -1,0 +1,54 @@
+[2023-12-04 11:29:28,429] 21 root - INFO - Data ingestion started
+[2023-12-04 11:29:28,828] 24 root - INFO - Read the Data from the csv file
+[2023-12-04 11:29:29,752] 28 root - INFO - Created the raw data file
+[2023-12-04 11:29:29,752] 30 root - INFO - Splitting the data into train and test
+[2023-12-04 11:29:29,850] 32 root - INFO - Data Splitting is done
+[2023-12-04 11:29:30,772] 36 root - INFO - Created the train and test data files
+[2023-12-04 11:29:30,772] 37 root - INFO - Data ingestion completed
+[2023-12-04 11:29:31,265] 72 root - INFO - read train and test data complete
+[2023-12-04 11:29:31,267] 73 root - INFO - Train Dataframe Head : 
+   Unnamed: 0    airline  flight source_city departure_time stops   arrival_time destination_city     class  duration  days_left  price
+0       27131  Air_India  AI-506       Delhi        Morning   one  Early_Morning          Kolkata   Economy     19.75         40   7366
+1      266857    Vistara  UK-706     Kolkata        Morning   one          Night           Mumbai  Business      9.83         42  64831
+2      141228    Vistara  UK-772     Kolkata        Morning   one          Night        Bangalore   Economy     10.50         41   6195
+3      288329    Vistara  UK-824     Chennai          Night   one        Morning            Delhi  Business     14.50         14  60160
+4       97334  Air_India  AI-501   Bangalore      Afternoon   one          Night           Mumbai   Economy      8.25         20   6578
+[2023-12-04 11:29:31,275] 74 root - INFO - Test Dataframe Head : 
+   Unnamed: 0    airline   flight source_city departure_time        stops   arrival_time destination_city     class  duration  days_left  price
+0      148417  Air_India   AI-424     Kolkata      Afternoon          one        Morning          Chennai   Economy     19.42          6  13524
+1       36879     Indigo  6E-2193       Delhi      Afternoon  two_or_more          Night          Chennai   Economy      7.00         13   9940
+2      274531  Air_India   AI-768     Kolkata      Afternoon          one      Afternoon          Chennai  Business     21.17         44  55983
+3      166397    Vistara   UK-876   Hyderabad          Night          one  Early_Morning        Bangalore   Economy     10.25         11   7927
+4      272722    Vistara   UK-774     Kolkata          Night          one          Night          Chennai  Business     26.50          5  55502
+[2023-12-04 11:29:31,275] 26 root - INFO - Data Transformation initiated
+[2023-12-04 11:29:31,275] 40 root - INFO - Pipeline Initiated
+[2023-12-04 11:29:31,817] 92 root - INFO - Applying preprocessing object on training and testing datasets.
+[2023-12-04 11:29:31,823] 97 root - INFO - Train Array : 
+[[4.03239557e-01 8.12500000e-01 1.00000000e+00 ... 4.00000000e-01
+  0.00000000e+00 7.36600000e+03]
+ [1.91815857e-01 8.54166667e-01 4.00000000e-01 ... 0.00000000e+00
+  1.00000000e+00 6.48310000e+04]
+ [2.06095482e-01 8.33333333e-01 4.00000000e-01 ... 2.00000000e-01
+  0.00000000e+00 6.19500000e+03]
+ ...
+ [2.71739130e-01 5.62500000e-01 1.00000000e+00 ... 2.00000000e-01
+  0.00000000e+00 6.73400000e+03]
+ [2.49360614e-02 8.12500000e-01 8.00000000e-01 ... 4.00000000e-01
+  0.00000000e+00 5.08200000e+03]
+ [5.24083546e-01 4.16666667e-02 4.00000000e-01 ... 1.00000000e+00
+  1.00000000e+00 6.64650000e+04]]
+[2023-12-04 11:29:31,823] 98 root - INFO - Test Array : 
+[[3.96206309e-01 1.04166667e-01 1.00000000e+00 ... 8.00000000e-01
+  0.00000000e+00 1.35240000e+04]
+ [1.31500426e-01 2.50000000e-01 8.00000000e-01 ... 8.00000000e-01
+  0.00000000e+00 9.94000000e+03]
+ [4.33503836e-01 8.95833333e-01 1.00000000e+00 ... 8.00000000e-01
+  1.00000000e+00 5.59830000e+04]
+ ...
+ [2.73657289e-01 5.83333333e-01 1.00000000e+00 ... 0.00000000e+00
+  0.00000000e+00 5.10200000e+03]
+ [1.59846547e-01 7.91666667e-01 6.00000000e-01 ... 6.00000000e-01
+  0.00000000e+00 5.57400000e+03]
+ [4.12190963e-01 3.33333333e-01 1.00000000e+00 ... 1.00000000e+00
+  0.00000000e+00 6.33900000e+03]]
+[2023-12-04 11:29:31,823] 105 root - INFO - preprocessing pickle file saved
