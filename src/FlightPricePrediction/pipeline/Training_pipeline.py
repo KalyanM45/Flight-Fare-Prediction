@@ -12,3 +12,8 @@ train_arr,test_arr=data_transformation.initialize_data_transformation(train_data
 from src.FlightPricePrediction.components.Model_trainer import ModelTrainer
 model_trainer_obj=ModelTrainer()
 model_trainer_obj.initate_model_training(train_arr,test_arr)
+
+# Model Evaluation Pipeline
+from src.FlightPricePrediction.components.Model_evaluation import ModelEvaluation
+model_eval_obj=ModelEvaluation()
+model_eval_obj.initiate_model_evaluation(train_arr,test_arr)

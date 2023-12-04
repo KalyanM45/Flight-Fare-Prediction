@@ -1,0 +1,57 @@
+[2023-12-04 15:08:26,608] 21 root - INFO - Data ingestion started
+[2023-12-04 15:08:26,859] 24 root - INFO - Read the Data from the csv file
+[2023-12-04 15:08:27,568] 28 root - INFO - Created the raw data file
+[2023-12-04 15:08:27,568] 30 root - INFO - Splitting the data into train and test
+[2023-12-04 15:08:27,661] 32 root - INFO - Data Splitting is done
+[2023-12-04 15:08:28,416] 36 root - INFO - Created the train and test data files
+[2023-12-04 15:08:28,416] 37 root - INFO - Data ingestion completed
+[2023-12-04 15:08:28,746] 72 root - INFO - read train and test data complete
+[2023-12-04 15:08:28,753] 73 root - INFO - Train Dataframe Head : 
+   Unnamed: 0    airline source_city departure_time stops   arrival_time destination_city    classs  duration  days_left  price
+0       27131  Air_India       Delhi        Morning   one  Early_Morning          Kolkata   Economy     19.75         40   7366
+1      266857    Vistara     Kolkata        Morning   one          Night           Mumbai  Business      9.83         42  64831
+2      141228    Vistara     Kolkata        Morning   one          Night        Bangalore   Economy     10.50         41   6195
+3      288329    Vistara     Chennai          Night   one        Morning            Delhi  Business     14.50         14  60160
+4       97334  Air_India   Bangalore      Afternoon   one          Night           Mumbai   Economy      8.25         20   6578
+[2023-12-04 15:08:28,754] 74 root - INFO - Test Dataframe Head : 
+   Unnamed: 0    airline source_city departure_time        stops   arrival_time destination_city    classs  duration  days_left  price
+0      148417  Air_India     Kolkata      Afternoon          one        Morning          Chennai   Economy     19.42          6  13524
+1       36879     Indigo       Delhi      Afternoon  two_or_more          Night          Chennai   Economy      7.00         13   9940
+2      274531  Air_India     Kolkata      Afternoon          one      Afternoon          Chennai  Business     21.17         44  55983
+3      166397    Vistara   Hyderabad          Night          one  Early_Morning        Bangalore   Economy     10.25         11   7927
+4      272722    Vistara     Kolkata          Night          one          Night          Chennai  Business     26.50          5  55502
+[2023-12-04 15:08:28,754] 26 root - INFO - Data Transformation initiated
+[2023-12-04 15:08:28,755] 40 root - INFO - Pipeline Initiated
+[2023-12-04 15:08:29,169] 91 root - INFO - Applying preprocessing object on training and testing datasets.
+[2023-12-04 15:08:29,169] 96 root - INFO - Train Array : 
+[[4.03239557e-01 8.12500000e-01 1.00000000e+00 ... 4.00000000e-01
+  0.00000000e+00 7.36600000e+03]
+ [1.91815857e-01 8.54166667e-01 4.00000000e-01 ... 0.00000000e+00
+  1.00000000e+00 6.48310000e+04]
+ [2.06095482e-01 8.33333333e-01 4.00000000e-01 ... 2.00000000e-01
+  0.00000000e+00 6.19500000e+03]
+ ...
+ [2.71739130e-01 5.62500000e-01 1.00000000e+00 ... 2.00000000e-01
+  0.00000000e+00 6.73400000e+03]
+ [2.49360614e-02 8.12500000e-01 8.00000000e-01 ... 4.00000000e-01
+  0.00000000e+00 5.08200000e+03]
+ [5.24083546e-01 4.16666667e-02 4.00000000e-01 ... 1.00000000e+00
+  1.00000000e+00 6.64650000e+04]]
+[2023-12-04 15:08:29,169] 97 root - INFO - Test Array : 
+[[3.96206309e-01 1.04166667e-01 1.00000000e+00 ... 8.00000000e-01
+  0.00000000e+00 1.35240000e+04]
+ [1.31500426e-01 2.50000000e-01 8.00000000e-01 ... 8.00000000e-01
+  0.00000000e+00 9.94000000e+03]
+ [4.33503836e-01 8.95833333e-01 1.00000000e+00 ... 8.00000000e-01
+  1.00000000e+00 5.59830000e+04]
+ ...
+ [2.73657289e-01 5.83333333e-01 1.00000000e+00 ... 0.00000000e+00
+  0.00000000e+00 5.10200000e+03]
+ [1.59846547e-01 7.91666667e-01 6.00000000e-01 ... 6.00000000e-01
+  0.00000000e+00 5.57400000e+03]
+ [4.12190963e-01 3.33333333e-01 1.00000000e+00 ... 1.00000000e+00
+  0.00000000e+00 6.33900000e+03]]
+[2023-12-04 15:08:29,169] 104 root - INFO - preprocessing pickle file saved
+[2023-12-04 15:08:29,216] 29 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2023-12-04 15:08:51,537] 51 root - INFO - Model Report : {'LinearRegression': 0.9035765265370084, 'Lasso': 0.9035758250901119, 'Ridge': 0.9035763605712354, 'Elasticnet': 0.45611445756234825, 'DecisionTreeRegressor': 0.9693519267749242, 'RandomForestRegressor': 0.9816240751315101}
+[2023-12-04 15:08:51,538] 64 root - INFO - Best Model Found , Model Name : RandomForestRegressor , R2 Score : 0.9816240751315101
