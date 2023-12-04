@@ -26,7 +26,7 @@ class DataTransformation:
             logging.info('Data Transformation initiated')
             
             # Define which columns should be ordinal-encoded and which should be scaled
-            categorical_cols = ['airline', 'source_city', 'departure_time', 'stops', 'arrival_time', 'destination_city', 'class']
+            categorical_cols = ['airline', 'source_city', 'departure_time', 'stops', 'arrival_time', 'destination_city', 'classs']
             numerical_cols = ['duration', 'days_left']
 
             airline_cat = ['SpiceJet', 'AirAsia', 'Vistara', 'GO_FIRST', 'Indigo','Air_India']
@@ -86,7 +86,6 @@ class DataTransformation:
             target_feature_test_df=test_df[target_column_name]
             
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
-            
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
             
             logging.info("Applying preprocessing object on training and testing datasets.")

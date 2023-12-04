@@ -1,0 +1,6 @@
+[2023-12-04 14:41:05,121] 96 werkzeug - WARNING -  * Debugger is active!
+[2023-12-04 14:41:05,126] 96 werkzeug - INFO -  * Debugger PIN: 139-788-510
+[2023-12-04 14:41:16,006] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:41:16] "GET / HTTP/1.1" 200 -
+[2023-12-04 14:41:16,259] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:41:16] "GET /static/styles.css HTTP/1.1" 200 -
+[2023-12-04 14:41:16,336] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:41:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-12-04 14:41:58,761] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\KALYAN\\Desktop\\Flight Fare Prediction\\src\\FlightPricePrediction\\pipeline\\Prediction_pipeline.py', reloading

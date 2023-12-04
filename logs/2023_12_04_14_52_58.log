@@ -1,0 +1,10 @@
+[2023-12-04 14:52:59,253] 96 werkzeug - WARNING -  * Debugger is active!
+[2023-12-04 14:52:59,253] 96 werkzeug - INFO -  * Debugger PIN: 139-788-510
+[2023-12-04 14:53:04,495] 64 root - INFO - Dataframe Gathered
+[2023-12-04 14:53:04,843] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:53:04] "POST / HTTP/1.1" 200 -
+[2023-12-04 14:53:04,862] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:53:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2023-12-04 14:53:09,553] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:53:09] "GET / HTTP/1.1" 200 -
+[2023-12-04 14:53:09,812] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:53:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2023-12-04 14:53:52,038] 64 root - INFO - Dataframe Gathered
+[2023-12-04 14:53:52,283] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:53:52] "POST / HTTP/1.1" 200 -
+[2023-12-04 14:53:52,612] 96 werkzeug - INFO - 127.0.0.1 - - [04/Dec/2023 14:53:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
